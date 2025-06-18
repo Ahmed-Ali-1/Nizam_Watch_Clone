@@ -41,34 +41,11 @@
             <div class="header-main">
                 <div class="header">
                     <div class="header-search d-flex justify-content-start">
-                        <div class="search-icon">
+                        <div class="search-icon d-none d-lg-block">
                             <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
                         </div>
+
                         <!--Manu Bar-->
-                        <!-- <div class="bar d-none">
-                            <button class="btn p-0" type="button" data-bs-toggle="offcanvas"
-                                data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
-                                <i class="fa-solid fa-bars"></i>
-                            </button>
-
-                            <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1"
-                                id="staticBackdrop" aria-labelledby="staticBackdropLabel">
-                                <div class="offcanvas-header px-4">
-                                    <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
-                                    <button type="button" class="btn-close m-0" data-bs-dismiss="offcanvas"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="offcanvas-body">
-                                    <div>
-                                        I will not close if you click outside of me.
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-
-
-
-
                         <div class="menu-bar d-none">
                             <nav class="navbar navbar-expand-lg p-0">
                                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
@@ -76,21 +53,63 @@
                                     aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
-
                                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
                                     aria-labelledby="offcanvasNavbarLabel">
-                                    <div class="offcanvas-body">
-                                        <div>
-                                            I will not close if you click outside of me.
-                                        </div>
+                                    <div class="offcanvas-body d-flex justify-content-start">
+
+
+                                        <nav class="header-menu">
+                                            <ul class="d-flex flex-column align-items-start gap-4">
+                                                <li><a class="active" href="">Home</a></li>
+                                                <li><a href="">Citizen</a></li>
+                                                <li class="nav-item dropdown">
+                                                    <a class="nav-link dropdown-toggle" href="#" role="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Men Watches
+                                                    </a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#">All Men Watches</a></li>
+                                                        <li><a class="dropdown-item" href="#">Citizen</a></li>
+                                                        <li><a class="dropdown-item" href="#">Roamer</a></li>
+                                                        <li><a class="dropdown-item" href="#">Slazenger</a></li>
+                                                        <li><a class="dropdown-item" href="#">Swiss Military</a></li>
+                                                        <li><a class="dropdown-item" href="#">Beverley Hills Polo
+                                                                Club</a></li>
+                                                        <li><a class="dropdown-item" href="#">Lee Cooper</a></li>
+                                                        <li><a class="dropdown-item" href="#">Hanowa</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                    <a class="nav-link dropdown-toggle" href="#" role="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Women Watches
+                                                    </a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#">All Women Watches</a></li>
+                                                        <li><a class="dropdown-item" href="#">Citizen</a></li>
+                                                        <li><a class="dropdown-item" href="#">Roamer</a></li>
+                                                        <li><a class="dropdown-item" href="#">Slazenger</a></li>
+                                                        <li><a class="dropdown-item" href="#">Swiss Military</a></li>
+                                                        <li><a class="dropdown-item" href="#">Beverley Hills Polo
+                                                                Club</a></li>
+                                                        <li><a class="dropdown-item" href="#">Lee Cooper</a></li>
+                                                        <li><a class="dropdown-item" href="#">Hanowa</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="">About</a></li>
+                                                <li><a href="">Contact</a></li>
+                                              
+                                            </ul>
+                                            <a href=""><button class="login-button" type="submit">Login</button></a>
+                                          
+                                        </nav>
+                                        
+                                        
                                     </div>
                             </nav>
                         </div>
-
-
-
-
                         <!--Manu Bar-->
+
                     </div>
                     <h1 class="header-heading m-0 ">
                         <a href="">
@@ -102,11 +121,11 @@
                     <div class="header-icon d-flex justify-content-end">
                         <div class="left-header-icon d-flex gap-4">
                             <a href="" id="search-hide"><i class="fa-solid fa-magnifying-glass"></i></a>
-                            <a href="" id="user-hide"><i class="fa-regular fa-user"></i></a>
+                            <a href="" class="d-none d-md-block"><i class="fa-regular fa-user"></i></a>
                             <a href=""><i class="fa-solid fa-cart-flatbed-suitcase"></i></a>
                         </div>
                     </div>
-                    <nav class="header-menu">
+                    <nav class="header-menu d-none d-lg-block">
                         <ul class="d-flex align-items-center gap-4">
                             <li><a class="active" href="">Home</a></li>
                             <li><a href="">Citizen</a></li>
