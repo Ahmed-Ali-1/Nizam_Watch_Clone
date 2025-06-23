@@ -91,18 +91,16 @@ body {
     text-underline-offset: 3px;
     text-decoration: underline;
 }
-.dropdown-menu{
-    margin-top:10px !important;
+
+.dropdown-menu {
+    margin-top: 10px !important;
 }
-.dropdown-menu .dropdown-item{
+
+.dropdown-menu .dropdown-item {
     background-color: transparent;
     text-decoration: none !important;
 }
-.login-button{
-    position: absolute;
-    bottom: 0;
-   
-}
-.offcanvas-body{
+
+.offcanvas-body {
     position: relative;
 }
