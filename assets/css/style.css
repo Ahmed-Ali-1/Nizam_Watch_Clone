@@ -120,12 +120,22 @@ body {
     justify-content: center;
 }
 
+.resp-shop-btn {}
+
 .Shop-Now button,
 .resp-shop button {
     padding: 10px 26px;
     color: #fff;
     background-color: transparent;
     border: 1px solid #fff;
+}
+
+.Shop-Now button:hover {
+    border: 2px solid #fff;
+}
+
+.View-btn button:hover {
+    border: 1px solid #000;
 }
 
 .resp-shop {
@@ -152,12 +162,15 @@ body {
     width: 100%;
 }
 
-.resp-ban-shop-btn button,
-.resp-shop-btn button {
+.resp-ban-shop-btn button {
     background-color: transparent;
     color: #000;
     border: 1px solid #000;
     padding: 10px 28px;
+}
+
+.resp-shop-btn button:hover {
+    border: 2px solid #000;
 }
 
 /* Watch Section*/
@@ -204,15 +217,16 @@ body {
 }
 
 .col:hover .watch_inf p {
-  text-decoration: underline;
+    text-decoration: underline;
 }
-.pre_price{
+
+.watch_prices .pre_price {
     text-decoration: line-through;
     color: #121212bf;
     font-size: 13px;
 }
-.new_price{
-   
+
+.watch_prices .new_price {
     font-size: 17px;
 }
 
@@ -236,4 +250,47 @@ body {
         align-items: center;
     }
 
+}
+
+.Card_Collection {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.card_Image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card_Image img {
+    transition: all .7s;
+}
+
+.card_Image:hover img {
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
+@media (max-width:992px) {
+    .Card_Collection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+}
+@media (max-width:992px) {
+    .Card_Collection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+}
+@media (max-width:556px) {
+    .Card_Collection {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+}
 }
