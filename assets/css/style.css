@@ -135,7 +135,7 @@ body {
 .View-btn button {
     background-color: #000;
     color: #fff;
-    padding: 10px 28px;
+    padding: 10px 32px;
     border: none;
 
 }
@@ -152,27 +152,88 @@ body {
     width: 100%;
 }
 
-.resp-ban-shop-btn button {
+.resp-ban-shop-btn button,
+.resp-shop-btn button {
     background-color: transparent;
     color: #000;
     border: 1px solid #000;
     padding: 10px 28px;
-
 }
 
+/* Watch Section*/
 
+.Watch {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
 
+.watch-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    transition: all 1s;
+}
 
+.watch-img {
+    position: relative;
+}
 
-
-.card_information h3 a{
-    text-decoration: none;
-    color: #000;
+.Sold_btn {
+    left: 10px;
+    padding: 4px 18px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    bottom: 30px;
+    border-radius: 50px;
+    position: absolute;
     font-size: 12px;
-    display: flex;
-    gap: 20;
-}
-.card_information h3 a:hover{
-    text-decoration: underline;
 }
 
+.watch_inf p {
+    color: #161616;
+    font-size: 12px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.col:hover img {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.col:hover .watch_inf p {
+  text-decoration: underline;
+}
+.pre_price{
+    text-decoration: line-through;
+    color: #121212bf;
+    font-size: 13px;
+}
+.new_price{
+   
+    font-size: 17px;
+}
+
+
+@media (max-width: 992px) {
+    .Watch {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .watch-img img {
+        height: 100%;
+        width: 50%;
+        object-fit: cover;
+
+    }
+
+    .watch-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
