@@ -39,8 +39,12 @@
     }
 }
 
+.btn-close{
+    font-size: 20px;
+}
 .offcanvas,
 .fade {
+    width: 85% !important;
     margin-top: 130px;
 }
 
@@ -49,8 +53,13 @@
     border: none;
 }
 
+.offcanvas-header .btn-close {
+    box-shadow: none;
+}
+
 .offcanvas .offcanvas-start .show {
     border: none !important;
+      
 }
 
 .carousel-indicators button {
