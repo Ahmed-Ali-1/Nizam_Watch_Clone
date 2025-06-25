@@ -243,7 +243,6 @@ body {
 .watch-img img {
     object-fit: cover;
     width: 100%;
-    height: 300px;
     transition: all 1s;
 }
 
@@ -270,12 +269,12 @@ body {
     position: relative;
 }
 
-.col:hover img {
+.Watch-cont:hover img {
     cursor: pointer;
     transform: scale(1.1);
 }
 
-.col:hover .watch_inf p {
+.Watch-cont:hover .watch_inf p {
     text-decoration: underline;
 }
 
@@ -290,39 +289,9 @@ body {
 }
 
 
-@media (max-width: 1200px) {
-    .Watch {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .watch-img img {
-        height: 100%;
-        width: 50%;
-        object-fit: cover;
-
-    }
-
-    .watch-img {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-}
-
 @media (max-width: 992px) {
     .Watch {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-}
-
-@media (max-width: 768px) {
-    .Watch {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        display: none;
     }
 
 }
