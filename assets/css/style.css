@@ -160,8 +160,9 @@ body {
     border: 1px solid #000;
     padding: 10px 28px;
 }
-.sec-baner-resp-shop-btn button:hover{
-     box-shadow: 0px 0px 1px 1px #000;
+
+.sec-baner-resp-shop-btn button:hover {
+    box-shadow: 0px 0px 1px 1px #000;
 }
 
 /*Buttons*/
@@ -179,7 +180,40 @@ body {
 }
 
 
+/* Shop Collection*/
 
+
+.Shop_Collection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.Shop_Card_Collection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+}
+
+.Shop_Card_Image {
+    overflow: hidden;
+}
+
+.Shop_Card_Image img {
+    transition: all .7s;
+}
+
+.Shop_Card_Image:hover img {
+    transform: scale(1.1);
+}
+
+@media (max-width:992px) {
+    .Shop_Collection {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+}
 
 /* Watch Section*/
 
@@ -275,9 +309,20 @@ body {
 
 }
 
+.card_Image {
+    overflow: hidden;
+}
+
 .card_Image img {
     height: 242px;
+    transition: all .7s;
 }
+
+.card_Image:hover img {
+    transform: scale(1.1);
+}
+
+
 
 @media (max-width: 992px) {
     .View_Collection {
