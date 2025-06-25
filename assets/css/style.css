@@ -244,6 +244,7 @@ body {
     object-fit: cover;
     width: 100%;
     transition: all 1s;
+    height: 300px;
 }
 
 .watch-img {
@@ -251,12 +252,12 @@ body {
 }
 
 .Sold_btn {
-    left: 10px;
+    left: 4px;
     padding: 4px 18px;
     color: #fff;
     background-color: #000;
     border: none;
-    bottom: 30px;
+    bottom: 15px;
     border-radius: 50px;
     position: absolute;
     font-size: 12px;
@@ -293,6 +294,9 @@ body {
     .Watch {
         display: none;
     }
+    .watch-img img {
+  height: 100%;
+}
 
 }
 
