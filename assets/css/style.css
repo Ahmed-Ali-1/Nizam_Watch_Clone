@@ -207,6 +207,23 @@ body {
     transform: scale(1.1);
 }
 
+.text:hover{
+    cursor: pointer;
+}
+
+.text i {
+
+    transition: all .2s;
+}
+
+.text:hover i {
+
+    display: inline-block;
+    transform: scaleX(1.2);
+    transform-origin: left center;
+}
+
+
 @media (max-width:992px) {
     .Shop_Collection {
         display: grid;
