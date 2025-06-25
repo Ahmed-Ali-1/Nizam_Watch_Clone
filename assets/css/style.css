@@ -273,10 +273,10 @@ body {
 }
 
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
     .Watch {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .watch-img img {
@@ -290,6 +290,22 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .Watch {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 768px) {
+    .Watch {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
 
 }
@@ -315,6 +331,7 @@ body {
 
 .card_Image img {
     height: 242px;
+    object-fit: fill;
     transition: all .7s;
 }
 
@@ -345,5 +362,77 @@ body {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 30px;
+    }
+}
+
+/*Men watch Collection*/
+
+.men-watchs-column {
+    padding: 0 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+}
+
+.men-watch-img {
+    position: relative;
+}
+
+.men-watch-img img {
+    object-fit: cover;
+    object-position: center center;
+    height: 250px;
+}
+
+.men-watch-content h3 {
+    font-size: 15px;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.men-watch-content div {
+    text-align: center;
+    color: #121212;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.men-watch-content button {
+    padding: 8px 0;
+    background-color: transparent;
+    color: #3e3e3e;
+    border-color: #bebebe;
+}
+
+.men-watchs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.men-watch-content {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.men-watch-content .men-watch-btn:hover {
+    background-color: rgb(63, 115, 203);
+    border-color: rgb(63, 115, 203);
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .men-watchs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .men-watch-img img {
+        height: 360px;
     }
 }
