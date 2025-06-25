@@ -110,7 +110,7 @@ body {
 
 }
 
-.Shop-Now {
+.slider-Shop-Now-btn {
     position: absolute;
     bottom: 50px;
     padding: 40px;
@@ -120,35 +120,51 @@ body {
     justify-content: center;
 }
 
-.resp-shop-btn {}
+/*Buttons*/
 
-.Shop-Now button,
-.resp-shop button {
+.slider-Shop-Now-btn button,
+.slider-resp-shop-btn button {
     padding: 10px 26px;
     color: #fff;
     background-color: transparent;
     border: 1px solid #fff;
 }
 
-.Shop-Now button:hover {
-    border: 2px solid #fff;
+.slider-Shop-Now-btn button:hover {
+    box-shadow: 0px 0px 1px 1px #fff;
 }
 
-.View-btn button:hover {
-    border: 1px solid #000;
+.slider-resp-shop-btn button:hover {
+    box-shadow: 0px 0px 1px 1px #fff;
 }
 
-.resp-shop {
+.slider-resp-shop {
     background-color: #242833;
 }
 
-.View-btn button {
+.View-all-btn button {
+    padding: 10px 30px;
     background-color: #000;
     color: #fff;
-    padding: 10px 32px;
     border: none;
+}
+
+.View-all-btn button:hover {
+    box-shadow: 0px 0px 1px 1px #000;
 
 }
+
+.sec-baner-resp-shop-btn button {
+    background-color: transparent;
+    color: #000;
+    border: 1px solid #000;
+    padding: 10px 28px;
+}
+.sec-baner-resp-shop-btn button:hover{
+     box-shadow: 0px 0px 1px 1px #000;
+}
+
+/*Buttons*/
 
 .Second_Banner {
     position: relative;
@@ -162,16 +178,8 @@ body {
     width: 100%;
 }
 
-.resp-ban-shop-btn button {
-    background-color: transparent;
-    color: #000;
-    border: 1px solid #000;
-    padding: 10px 28px;
-}
 
-.resp-shop-btn button:hover {
-    border: 2px solid #000;
-}
+
 
 /* Watch Section*/
 
@@ -252,45 +260,45 @@ body {
 
 }
 
-.Card_Collection {
+/* View Collection*/
+
+.View_Collection {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
 }
 
-.card_Image img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
+.Card_Collection {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+
 }
 
 .card_Image img {
-    transition: all .7s;
+    height: 242px;
 }
 
-.card_Image:hover img {
-    transform: scale(1.1);
-    cursor: pointer;
+@media (max-width: 992px) {
+    .View_Collection {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+}
 
+@media (max-width: 768px) {
+    .View_Collection {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
 }
-@media (max-width:992px) {
-    .Card_Collection {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-}
-}
-@media (max-width:992px) {
-    .Card_Collection {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-}
-}
-@media (max-width:556px) {
-    .Card_Collection {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 30px;
-}
+
+@media (max-width: 556px) {
+    .View_Collection {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
 }
