@@ -5,6 +5,7 @@ $('.owl-carousel').owlCarousel({
     margin:10,
     nav:true,
     dots:false,
-    
-   
+     
 });
+
+
